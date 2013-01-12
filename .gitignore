@@ -30,6 +30,7 @@ nbproject
 .komodotools
 
 # Folders to ignore
+03.asset
 .settings
 .hg
 .svn
