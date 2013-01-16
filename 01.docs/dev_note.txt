@@ -1,0 +1,13 @@
+【一】Git相关
+1. 软件下载：
+(1) Git for windows : http://code.google.com/p/msysgit/downloads/list
+(2) TortoiseGit : http://code.google.com/p/tortoisegit/wiki/Download?tm=2
+2. 使用教程 : http://www.fantxi.com/blog/archives/tortoisegit-github/
+
+【二】推荐编辑器
+1.Sublime Text 2 : http://www.sublimetext.com/
+
+【三】yii相关
+1.官网 : http://www.yiiframework.com/
+2.入门指南 : http://www.yiiframework.com/doc/guide/1.1/zh_cn/index
+3.API参考 : http://www.yiiframework.com/doc/api/1.1/
