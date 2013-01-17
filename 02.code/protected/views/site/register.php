@@ -3,19 +3,18 @@
 /* @var $model UserService */
 /* @var $form CActiveForm  */
 
-$this->pageTitle=Yii::app()->name . ' - Login';
+$this->pageTitle=Yii::app()->name . ' - Register';
 $this->breadcrumbs=array(
-	'Login',
+	'Register',
 );
 ?>
 
-<h1>Login</h1>
-
-<p>Please fill out the following form with your login credentials:</p>
+<h1>Register</h1>
 
 <div class="form">
+
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'user-login-form',
+	'id'=>'user-register-form',
 	'enableAjaxValidation'=>false,
 	// 'enableClientValidation'=>true,
 	// 'clientOptions'=>array(
@@ -24,6 +23,8 @@ $this->breadcrumbs=array(
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
+
+	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>
@@ -37,15 +38,23 @@ $this->breadcrumbs=array(
 		<?php echo $form->error($model,'password'); ?>
 	</div>
 
-	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
+	<div class="row">
+		<?php echo $form->labelEx($model,'password2'); ?>
+		<?php echo $form->passwordField($model,'password2'); ?>
+		<?php echo $form->error($model,'password2'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'email'); ?>
+		<?php echo $form->textField($model,'email'); ?>
+		<?php echo $form->error($model,'email'); ?>
+	</div>
+
+
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
+		<?php echo CHtml::submitButton('Register'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
+
 </div><!-- form -->
