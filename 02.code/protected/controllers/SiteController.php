@@ -33,7 +33,7 @@ class SiteController extends Controller
 	{
 		$model = new UserService('login');
 		if(isset($_POST['UserService'])) {
-			$model->attributes=$_POST['UserService'];
+			$model->attributes = $_POST['UserService'];
 			if($model->validate() && $model->login()) {
 				$this->redirect(Yii::app()->user->returnUrl);
 			}
